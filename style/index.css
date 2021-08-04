@@ -58,9 +58,12 @@ xl 1200 px
   z-index: 10;
 }
 
+.sec-one .nav-bar .hide {
+  display: none;
+}
+
 .sec-one .nav-bar #menu-ul {
   list-style: none;
-  display: none;
 }
 
 .sec-one .nav-bar #menu-ul li a {
@@ -84,6 +87,10 @@ xl 1200 px
 .sec-one .menu-list a {
   color: white;
   font-size: 30px;
+}
+
+.sec-one .menu-list a:hover {
+  cursor: pointer;
 }
 
 .sec-one .grass-front {

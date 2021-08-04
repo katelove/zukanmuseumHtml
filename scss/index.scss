@@ -50,9 +50,12 @@ xl 1200 px
         width: 100%;
         background-color: rgb(56, 55, 55);
         z-index: 10;
+        .hide{
+            display: none;
+        }
        #menu-ul {
             list-style: none;
-            display: none;
+    
             li {
                 a{
                     color: inherit;
@@ -75,6 +78,9 @@ xl 1200 px
             color: white;
             font-size: 30px;
         }
+        a:hover{
+            cursor: pointer;
+        }
     }
     .grass-front{
         z-index: 5;
@@ -86,6 +92,8 @@ xl 1200 px
      }
     
 }
+
+
 // menu 為橫
 // @media screen and (min-width: 1200px) {
 //  .sec-one{

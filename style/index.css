@@ -1,13 +1,19 @@
+/*
+sm 576 px
+md 768 px
+lg 992 px
+xl 1200 px
+*/
 * {
   margin: 0;
   padding: 0;
 }
 
-.zukanLink {
+.zukan-header {
   background-color: #020202;
 }
 
-.zukanLink a {
+.zukan-header a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -20,22 +26,37 @@
   text-decoration: none;
 }
 
-.zukanLink a p {
+.zukan-header a p {
   padding-left: 20px;
   color: white;
   width: 40%;
   font-family: 'Roboto', sans-serif;
 }
 
-.zukanLink a marquee {
+.zukan-header a marquee {
   padding-right: 20px;
   width: 60%;
   color: white;
   font-family: 'Hind Siliguri', sans-serif;
 }
 
-.zukanLink :hover {
+.zukan-header :hover {
   color: yellow;
   text-decoration: none;
+}
+
+.sec-one {
+  position: relative;
+}
+
+.sec-one .grass-front {
+  z-index: 5;
+  position: absolute;
+  bottom: 0;
+}
+
+.sec-one img {
+  width: 100%;
+  z-index: -1;
 }
 /*# sourceMappingURL=index.css.map */

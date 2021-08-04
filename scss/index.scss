@@ -1,11 +1,16 @@
+/*
+sm 576 px
+md 768 px
+lg 992 px
+xl 1200 px
+*/
 *{
     margin: 0;
     padding: 0;
 }
 
-.zukanLink{
+.zukan-header{
     background-color: rgb(2, 2, 2);
-   
     a{
         display: flex;
         justify-content: center;
@@ -23,13 +28,24 @@
             width: 60%;
             color:white;
             font-family: 'Hind Siliguri', sans-serif;
-        }
-    
-          
+        }         
       
     }
     :hover{
         color: yellow;
         text-decoration: none;
         }
+}
+
+.sec-one{
+    position: relative;
+    .grass-front{
+        z-index: 5;
+        position: absolute;
+        bottom: 0;
+    }
+     img{
+     width: 100%;
+     z-index:-1
+     }
 }

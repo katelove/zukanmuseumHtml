@@ -40,7 +40,11 @@
             </a>
         </div>
         <img class="grass-front" src="./images/grass.png" alt="">
-        <img src="./images/home.jpg" alt="">
+        <picture>
+            <source media="(min-width: 1200px)" srcset="./images/home-hr.png" type="image/png" />
+            <source media="(max-width: 576px)" srcset="./images/home.jpg" type="image/jpg" />
+            <img class="homePic" src="./images/home-hr.png" alt="ZUKAN MUSEUM" />
+        </picture>
     </section>
 
     <section></section>

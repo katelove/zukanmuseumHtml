@@ -96,10 +96,17 @@ xl 1200 px
 .sec-one .grass-front {
   z-index: 5;
   position: absolute;
-  bottom: 0;
+  bottom: -49%;
+  width: 100%;
 }
 
-.sec-one img {
+.sec-one .homePic {
   width: 100%;
+}
+
+@media (max-width: 576px) {
+  .sec-one .grass-front {
+    bottom: 0;
+  }
 }
 /*# sourceMappingURL=index.css.map */

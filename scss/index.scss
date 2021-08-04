@@ -85,47 +85,18 @@ xl 1200 px
     .grass-front{
         z-index: 5;
         position: absolute;
-        bottom: 0;
+        bottom: -49%;
+        width: 100%;
     }
-    img{
-     width: 100%;
-     }
-    
+    .homePic{
+        width: 100%;
+    }
 }
 
-
-// menu 為橫
-// @media screen and (min-width: 1200px) {
-//  .sec-one{
-//     .nav-bar{
-//       nav li:first-child {
-//        padding-left: 30px;
-//     }
-//     nav li {
-//       display: inline-block;
-//       padding-right: 30px;
-//       }
-//     }
-//   }
-// }
-
-// @media (min-width: 480px) and (max-width: 680px) {
-//     nav li {
-//       text-align: center;
-//     }
-//     nav ul {
-//       columns: 2;
-//       -webkit-columns: 2;
-//       -moz-columns: 2;
-//     }
-//   }
-
-//   nav li {
-//     text-align: center;
-//   }
-//   nav ul {
-//     display: none;
-//     columns: 1;
-//     -webkit-columns: 1;
-//     -moz-columns: 1;
-//   }
+@media (max-width: 576px){
+    .sec-one{
+        .grass-front{
+            bottom: 0;
+        }
+    }
+}

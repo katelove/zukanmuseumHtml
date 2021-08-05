@@ -23,26 +23,26 @@ xl 1200 px
         align-items: center;
         text-decoration: none;
         p{
-            padding-left: 20px;
+            padding: 10px 10px 10px 50px ;
             color:white;
-            width: 40%;
             font-family: 'Roboto', sans-serif;
+            width: 150px;
         }
 
         marquee{
             padding-right: 20px;
-            width: 60%;
             color:white;
             font-family: 'Hind Siliguri', sans-serif;
         }         
-      
+        :hover{
+            color: yellow;
+            text-decoration: none;
+            }
     }
-    :hover{
-        color: yellow;
-        text-decoration: none;
-        }
+
 }
 
+// section1
 .sec-one{
     position: relative;
     .nav-bar{
@@ -94,6 +94,17 @@ xl 1200 px
 }
 
 @media (max-width: 576px){
+    .zukan-header{
+        a{
+            p{
+            padding-left: 20px;
+            width: 40%;
+            }
+        }
+        marquee{
+            width: 60%;
+        }
+    }
     .sec-one{
         .grass-front{
             bottom: 0;

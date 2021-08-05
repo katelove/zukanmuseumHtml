@@ -43,7 +43,7 @@ xl 1200 px
 
 }
 
-// section1
+// ====================== section1 ===================================
 .sec-one{
     position: relative;
     .nav-bar{
@@ -136,7 +136,24 @@ xl 1200 px
         width: 100%;
     }
 }
+// ====================== section2 ===================================
+.sec-two{
+    background-image: url("../images/statement_bg.png");
+    top: 0;
+.sec-word{
+    font-family: BrushScriptMT, Brush Script MT;
+    color: white;
+    font-size: 100px;
+    font-weight: initial;
+    text-align: center;
+}
 
+
+
+
+}
+
+//============================= RWD =================================
 @media (max-width: 768px){
     .zukan-header{
         a{
@@ -183,7 +200,6 @@ xl 1200 px
         }
     }
 }
-
 
 /*如果螢幕寬度為 768px 以上 且 992px 以下，就套用 css 設定*/
 @media screen and (min-width: 768px)and (max-width: 992px){

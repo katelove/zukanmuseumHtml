@@ -157,6 +157,19 @@ xl 1200 px
   width: 100%;
 }
 
+.sec-two {
+  background-image: url("../images/statement_bg.png");
+  top: 0;
+}
+
+.sec-two .sec-word {
+  font-family: BrushScriptMT, Brush Script MT;
+  color: white;
+  font-size: 100px;
+  font-weight: initial;
+  text-align: center;
+}
+
 @media (max-width: 768px) {
   .zukan-header a p {
     padding-left: 20px;

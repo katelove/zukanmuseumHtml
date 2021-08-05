@@ -7,7 +7,7 @@ xl 1200 px
 // google font 
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Hind+Siliguri&family=Montserrat:wght@100&family=Roboto:wght@300;500&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Alice&family=Hind+Siliguri&family=Monoton&family=Montserrat:wght@100;900&family=Paytone+One&family=Roboto:wght@300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Acme&display=swap');
 //fonawsome
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
 
@@ -76,7 +76,7 @@ xl 1200 px
             h1{
                 padding: 30px;
                 font-size: 50px;
-                font-family: 'Paytone One', sans-serif;
+                font-family: 'Acme', sans-serif;
                 color: white;
             }
         }
@@ -109,9 +109,10 @@ xl 1200 px
         }
 
     }
+    // 漢堡選單
     .menu-list{
         z-index: 10;
-         top: 30px;
+        top: 30px;
         right: 30px;
         position: absolute;
         a{
@@ -122,35 +123,105 @@ xl 1200 px
             cursor: pointer;
         }
     }
+    .zukan-logo{
+        display: none;
+    }
+    .grass-before{
+        display: none;
+    }
     .grass-front{
-        z-index: 5;
-        position: absolute;
-        bottom: -49%;
-        width: 100%;
+        display: none;
     }
     .homePic{
         width: 100%;
     }
 }
 
-@media (max-width: 576px){
+@media (max-width: 768px){
     .zukan-header{
         a{
             p{
             padding-left: 20px;
-            width: 40%;
+            width: 30%;
             }
         }
         marquee{
-            width: 60%;
+            width: 70%;
         }
     }
     .sec-one{
+        .zukan-logo{
+            z-index: 15;
+            display: block;
+            position: absolute;
+            bottom: 30px;
+            width: 100%;
+        }
+        .grass-before{
+            z-index: 10;
+            position: absolute;
+            height: 100%;
+            display: block;
+        }
+        .grass-front{
+            z-index: 5;
+            position: absolute;
+            bottom: 0;
+            height: 100%;
+            display: block;
+        }
         .sectOne-title{
+            .title-left{
+              h1{
+                  font-size: 25px;
+              }
+            }
+            .title-right{
+                display: none;
+            }
+           
+        }
+    }
+}
+
+
+/*如果螢幕寬度為 768px 以上 且 992px 以下，就套用 css 設定*/
+@media screen and (min-width: 768px)and (max-width: 992px){
+    .zukan-header{
+        a{
+            p{
+            width: 20%;
+            }
+        }
+
+    }
+    .sec-one{
+        .zukan-logo{
+            display: none;
+        }
+        .grass-before{
             display: none;
         }
         .grass-front{
-            bottom: 0;
+            display: none;
         }
+        .sectOne-title{
+          
+            .title-left{
+              h1{
+                padding: 15px;
+                font-size: 25px;
+              }
+            }
+            .title-right{
+                display: none;
+            }
+           
+        }
+        .menu-list{
+            padding: 15px;
+            top: 0;
+        }
+
     }
 }

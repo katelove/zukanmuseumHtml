@@ -47,6 +47,7 @@ section {
 
 // ====================== section1 ===================================
 .sec-one {
+    background-color: #09112c;
     position: relative;
     .nav-bar {
         width: 100%;
@@ -195,10 +196,62 @@ section {
 
 //============================= RWD =================================
 @media (max-width: 576px) {
-
+    .content-wrapper {
+        .sec-two {
+            padding: 100px ;
+            .content-inner {
+                h2 {
+                    font-size: 55px;
+                }
+                .sec-word {
+                        margin-top: 50px;
+                        margin-left: 20px;
+                    ul {
+                        li {
+                            padding: 10px 0;
+                            p {
+                                font-size: 15px;                       
+                                word-spacing: 2pt; //調整整個單詞間距離
+                                strong {
+                                    font-size: 20px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
-
+@media (min-width: 576px){
+    .content-wrapper {
+        .sec-two {
+            padding: 150px 100px;
+            .content-inner {
+                h2 {
+                    font-size: 70px;
+                }
+                .sec-word {
+                        margin-top: 50px;
+                        margin-left: 20px;
+                    ul {
+                        li {
+                            padding: 10px 0;
+                            p {
+                                font-size: 20px;                       
+                                word-spacing: 2pt; //調整整個單詞間距離
+                                strong {
+                                    font-size: 23px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 
 
 /*如果螢幕寬度為 768px 以下*/
@@ -228,13 +281,13 @@ section {
         .grass-before {
             z-index: 10;
             position: absolute;
-            width: 100%; // transform: translateY(20%);
+            width: 100%;
             display: block;
         }
         .grass-front {
             z-index: 5;
-            position: absolute; // bottom: 0;
-            width: 100%; // transform: translateY(20%);
+            position: absolute; 
+            width: 100%;
             display: block;
         }
         .sectOne-title {

@@ -54,6 +54,7 @@ section {
 }
 
 .sec-one {
+  background-color: #09112c;
   position: relative;
 }
 
@@ -229,6 +230,52 @@ section {
 
 .content-wrapper .sec-two .content-inner .sec-word ul li p strong {
   font-size: 50px;
+}
+
+@media (max-width: 576px) {
+  .content-wrapper .sec-two {
+    padding: 100px;
+  }
+  .content-wrapper .sec-two .content-inner h2 {
+    font-size: 55px;
+  }
+  .content-wrapper .sec-two .content-inner .sec-word {
+    margin-top: 50px;
+    margin-left: 20px;
+  }
+  .content-wrapper .sec-two .content-inner .sec-word ul li {
+    padding: 10px 0;
+  }
+  .content-wrapper .sec-two .content-inner .sec-word ul li p {
+    font-size: 15px;
+    word-spacing: 2pt;
+  }
+  .content-wrapper .sec-two .content-inner .sec-word ul li p strong {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 576px) {
+  .content-wrapper .sec-two {
+    padding: 150px 100px;
+  }
+  .content-wrapper .sec-two .content-inner h2 {
+    font-size: 70px;
+  }
+  .content-wrapper .sec-two .content-inner .sec-word {
+    margin-top: 50px;
+    margin-left: 20px;
+  }
+  .content-wrapper .sec-two .content-inner .sec-word ul li {
+    padding: 10px 0;
+  }
+  .content-wrapper .sec-two .content-inner .sec-word ul li p {
+    font-size: 20px;
+    word-spacing: 2pt;
+  }
+  .content-wrapper .sec-two .content-inner .sec-word ul li p strong {
+    font-size: 23px;
+  }
 }
 
 /*如果螢幕寬度為 768px 以下*/

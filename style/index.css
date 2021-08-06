@@ -60,7 +60,6 @@ section {
 .sec-one .nav-bar {
   width: 100%;
   background-color: #383737;
-  z-index: 10;
 }
 
 .sec-one .nav-bar .hide {
@@ -100,6 +99,15 @@ section {
 .sec-one .sectOne-title .title-right {
   position: fixed;
   right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .sec-one .sectOne-title .title-right ul {
@@ -117,6 +125,7 @@ section {
 
 .sec-one .sectOne-title .title-right ul li {
   display: inline-block;
+  padding-left: 15px;
 }
 
 .sec-one .sectOne-title .title-right ul li select {
@@ -126,6 +135,10 @@ section {
 .sec-one .sectOne-title .title-right ul li i {
   font-size: 25px;
   padding: 0 10px;
+}
+
+.sec-one .sectOne-title .title-right .menu-list {
+  padding-right: 30px;
 }
 
 .sec-one .sectOne-title .title-right .menu-list a {
@@ -198,13 +211,17 @@ section {
   font-size: 50px;
 }
 
+/*如果螢幕寬度為 768px 以下*/
 @media (max-width: 768px) {
   .zukan-header a p {
-    padding-left: 20px;
-    width: 30%;
+    padding-left: 10px;
+    width: 40%;
   }
   .zukan-header marquee {
-    width: 70%;
+    width: 60%;
+  }
+  .sec-one .nav-bar {
+    position: fixed;
   }
   .sec-one .zukan-logo {
     z-index: 15;
@@ -229,10 +246,15 @@ section {
     display: block;
   }
   .sec-one .sectOne-title .title-left h1 {
-    font-size: 25px;
-  }
-  .sec-one .sectOne-title .title-right {
     display: none;
+  }
+  .sec-one .sectOne-title .title-right ul {
+    display: none;
+  }
+  .sec-one .sectOne-title .title-right .menu-list {
+    display: block;
+    padding-top: 30px;
+    z-index: 100;
   }
 }
 

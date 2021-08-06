@@ -51,7 +51,6 @@ section{
     .nav-bar{
         width: 100%;
         background-color: rgb(56, 55, 55);
-        z-index: 10;
         .hide{
             display: none;
         }
@@ -86,6 +85,9 @@ section{
         .title-right{
            position: fixed;
            right: 0;
+           display: flex;
+           justify-content: flex-start;
+           align-items: center;
             ul{
                 list-style: none;
                 padding: 30px;
@@ -97,6 +99,7 @@ section{
                 }
                 li{
                     display: inline-block;
+                    padding-left:  15px;
                     select{
                         width: 100px;
                     }
@@ -107,8 +110,10 @@ section{
 
                 }
             }
+
             // 漢堡選單
             .menu-list{
+                padding-right: 30px;
                 a{
                 color: white;
                 font-size: 30px;
@@ -117,7 +122,6 @@ section{
                     cursor: pointer;
                 }
             }
-   
         }
 
     }
@@ -180,43 +184,46 @@ section{
 
     
     
-    
-    
     }
 }
 
 
 //============================= RWD =================================
+
+/*如果螢幕寬度為 768px 以下*/
 @media (max-width: 768px){
     .zukan-header{
         a{
             p{
-            padding-left: 20px;
-            width: 30%;
+            padding-left: 10px;
+            width: 40%;
             }
         }
         marquee{
-            width: 70%;
+            width: 60%;
         }
     }
     .sec-one{
+        .nav-bar{
+            position: fixed;
+        }
         .zukan-logo{
             z-index: 15;
             display: block;
-            position: absolute;
+            position:absolute;
             bottom: 30px;
             width: 100%;
         }
         .grass-before{
             z-index: 10;
-            position: absolute;
+            position:absolute;
             width: 100%;
             height: 100%;
             display: block;
         }
         .grass-front{
             z-index: 5;
-            position: absolute;
+            position:absolute;
             bottom: 0;
             width: 100%;
             height: 100%;
@@ -225,11 +232,19 @@ section{
         .sectOne-title{
             .title-left{
               h1{
-                  font-size: 25px;
+                  display: none;
               }
             }
             .title-right{
-                display: none;
+                ul{
+                    display: none;
+                }
+                .menu-list{
+                    display: block;
+                    padding-top: 30px;
+                    z-index: 100;
+                }           
+            
             }
            
         }

@@ -218,15 +218,15 @@ section{
             z-index: 10;
             position:absolute;
             width: 100%;
-            transform: translateY(20%);
+            // transform: translateY(20%);
             display: block;
         }
         .grass-front{
             z-index: 5;
             position:absolute;
-            bottom: 0;
+            // bottom: 0;
             width: 100%;
-            transform: translateY(20%);
+            // transform: translateY(20%);
             display: block;
         }
         .sectOne-title{
@@ -280,14 +280,18 @@ section{
               }
             }
             .title-right{
-                display: none;
+                ul{
+                    display: none;
+                }
+                .menu-list{
+                    padding: 15px;
+                    top: 0;
+                    display: block;
+                }
             }
            
         }
-        .menu-list{
-            padding: 15px;
-            top: 0;
-        }
+  
 
     }
 }

@@ -234,17 +234,12 @@ section {
     z-index: 10;
     position: absolute;
     width: 100%;
-    -webkit-transform: translateY(20%);
-            transform: translateY(20%);
     display: block;
   }
   .sec-one .grass-front {
     z-index: 5;
     position: absolute;
-    bottom: 0;
     width: 100%;
-    -webkit-transform: translateY(20%);
-            transform: translateY(20%);
     display: block;
   }
   .sec-one .sectOne-title .title-left h1 {
@@ -278,12 +273,13 @@ section {
     padding: 15px;
     font-size: 25px;
   }
-  .sec-one .sectOne-title .title-right {
+  .sec-one .sectOne-title .title-right ul {
     display: none;
   }
-  .sec-one .menu-list {
+  .sec-one .sectOne-title .title-right .menu-list {
     padding: 15px;
     top: 0;
+    display: block;
   }
 }
 /*# sourceMappingURL=index.css.map */

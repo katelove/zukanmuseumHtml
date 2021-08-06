@@ -135,23 +135,57 @@ xl 1200 px
     .homePic{
         width: 100%;
     }
+    picture{
+        background-color: #09112c;
+        display: block;
+    }
 }
 // ====================== section2 ===================================
-.sec-two{
-    background-image: url("../images/statement_bg.png");
-    top: 0;
-.sec-word{
-    font-family: BrushScriptMT, Brush Script MT;
-    color: white;
-    font-size: 100px;
-    font-weight: initial;
-    text-align: center;
+.content-wrapper{
+    .sec-two{
+        background-image: url("../images/statement_bg.png");
+        top: 0;
+        .content-inner{
+            padding: 150px 200px;
+           
+                h2{
+                    font-family: BrushScriptMT, Brush Script MT;
+                    color: white;
+                    font-size: 150px;
+                    font-weight: initial;
+                    text-align: center;
+                }
+                .sec-word{
+                    ul{
+                        list-style: none;
+                        margin-top: 100px;
+                        margin-left: 350px;
+                        li{
+                            padding: 20px 0;
+                            p{
+                                color:#7f9ebd;
+                                font-family: 'Roboto', sans-serif;
+                                font-size: 25px;
+                                line-height:2;
+                                font-weight: initial;
+                                word-spacing:5pt;//調整整個單詞間距離
+                              strong{
+                                  font-size: 50px;
+                              }
+                            }
+
+                        }
+                    }
+            }
+        }
+
+    
+    
+    
+    
+    }
 }
 
-
-
-
-}
 
 //============================= RWD =================================
 @media (max-width: 768px){

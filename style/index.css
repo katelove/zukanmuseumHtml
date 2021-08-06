@@ -157,17 +157,49 @@ xl 1200 px
   width: 100%;
 }
 
-.sec-two {
+.sec-one picture {
+  background-color: #09112c;
+  display: block;
+}
+
+.content-wrapper .sec-two {
   background-image: url("../images/statement_bg.png");
   top: 0;
 }
 
-.sec-two .sec-word {
+.content-wrapper .sec-two .content-inner {
+  padding: 150px 200px;
+}
+
+.content-wrapper .sec-two .content-inner h2 {
   font-family: BrushScriptMT, Brush Script MT;
   color: white;
-  font-size: 100px;
+  font-size: 150px;
   font-weight: initial;
   text-align: center;
+}
+
+.content-wrapper .sec-two .content-inner .sec-word ul {
+  list-style: none;
+  margin-top: 100px;
+  margin-left: 350px;
+}
+
+.content-wrapper .sec-two .content-inner .sec-word ul li {
+  padding: 20px 0;
+}
+
+.content-wrapper .sec-two .content-inner .sec-word ul li p {
+  color: #7f9ebd;
+  font-family: 'Roboto', sans-serif;
+  font-size: 25px;
+  line-height: 2;
+  font-weight: initial;
+  word-spacing: 5pt;
+}
+
+.content-wrapper .sec-two .content-inner .sec-word ul li p strong {
+  font-size: 50px;
 }
 
 @media (max-width: 768px) {

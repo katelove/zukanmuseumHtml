@@ -224,36 +224,6 @@ section {
     }
 }
 
-@media (min-width: 576px){
-    .content-wrapper {
-        .sec-two {
-            padding: 150px 100px;
-            .content-inner {
-                h2 {
-                    font-size: 70px;
-                }
-                .sec-word {
-                        margin-top: 50px;
-                        margin-left: 20px;
-                    ul {
-                        li {
-                            padding: 10px 0;
-                            p {
-                                font-size: 20px;                       
-                                word-spacing: 2pt; //調整整個單詞間距離
-                                strong {
-                                    font-size: 23px;
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
-
-
 /*如果螢幕寬度為 768px 以下*/
 @media (max-width: 768px) {
     .zukan-header {
@@ -308,10 +278,35 @@ section {
             }
         }
     }
+    .content-wrapper {
+        .sec-two {
+            padding: 150px 100px;
+            .content-inner {
+                h2 {
+                    font-size: 70px;
+                }
+                .sec-word {
+                        margin-top: 50px;
+                        margin-left: 20px;
+                    ul {
+                        li {
+                            padding: 10px 0;
+                            p {
+                                font-size: 20px;                       
+                                word-spacing: 2pt; //調整整個單詞間距離
+                                strong {
+                                    font-size: 23px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 /*如果螢幕寬度為 768px 以上 且 992px 以下，就套用 css 設定*/
-
 @media screen and (min-width: 768px)and (max-width: 992px) {
     .zukan-header {
         a {
@@ -322,7 +317,7 @@ section {
     }
     .sec-one {
         .grass-before {
-            display: none;
+          display: none;
         }
         .grass-front {
             display: none;
@@ -342,6 +337,34 @@ section {
                     padding: 15px;
                     top: 0;
                     display: block;
+                }
+            }
+        }
+
+    }
+    .content-wrapper {
+ 
+        .sec-two {
+            padding: 150px 100px;
+            .content-inner {
+                h2 {
+                    font-size: 70px;
+                }
+                .sec-word {
+                        margin-top: 50px;
+                        margin-left: 20px;
+                    ul {
+                        li {
+                            padding: 10px 0;
+                            p {
+                                font-size: 20px;                       
+                                word-spacing: 2pt; //調整整個單詞間距離
+                                strong {
+                                    font-size: 23px;
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }

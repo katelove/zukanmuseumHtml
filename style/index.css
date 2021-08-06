@@ -171,13 +171,30 @@ section {
   display: block;
 }
 
+.content-wrapper {
+  background-color: #0b1534;
+}
+
 .content-wrapper .sec-two {
   background-image: url("../images/statement_bg.png");
+  background-size: 100% auto;
+  background-position: top;
   top: 0;
+  padding: 150px 200px;
+  position: relative;
 }
 
 .content-wrapper .sec-two .content-inner {
-  padding: 150px 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .content-wrapper .sec-two .content-inner h2 {
@@ -188,10 +205,13 @@ section {
   text-align: center;
 }
 
+.content-wrapper .sec-two .content-inner .sec-word {
+  margin-top: 100px;
+  margin-left: 150px;
+}
+
 .content-wrapper .sec-two .content-inner .sec-word ul {
   list-style: none;
-  margin-top: 100px;
-  margin-left: 350px;
 }
 
 .content-wrapper .sec-two .content-inner .sec-word ul li {
@@ -259,9 +279,6 @@ section {
 @media screen and (min-width: 768px) and (max-width: 992px) {
   .zukan-header a p {
     width: 20%;
-  }
-  .sec-one .zukan-logo {
-    display: none;
   }
   .sec-one .grass-before {
     display: none;

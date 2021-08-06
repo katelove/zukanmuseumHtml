@@ -14,6 +14,10 @@ xl 1200 px
   padding: 0;
 }
 
+section {
+  height: 100vh;
+}
+
 .zukan-header {
   background-color: #020202;
 }
@@ -82,7 +86,7 @@ xl 1200 px
 }
 
 .sec-one .sectOne-title .title-left {
-  position: absolute;
+  position: fixed;
   left: 0;
 }
 
@@ -94,9 +98,8 @@ xl 1200 px
 }
 
 .sec-one .sectOne-title .title-right {
-  position: absolute;
+  position: fixed;
   right: 0;
-  margin-right: 30px;
 }
 
 .sec-one .sectOne-title .title-right ul {
@@ -125,19 +128,12 @@ xl 1200 px
   padding: 0 10px;
 }
 
-.sec-one .menu-list {
-  z-index: 10;
-  top: 30px;
-  right: 30px;
-  position: absolute;
-}
-
-.sec-one .menu-list a {
+.sec-one .sectOne-title .title-right .menu-list a {
   color: white;
   font-size: 30px;
 }
 
-.sec-one .menu-list a:hover {
+.sec-one .sectOne-title .title-right .menu-list a:hover {
   cursor: pointer;
 }
 

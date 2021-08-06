@@ -15,7 +15,9 @@ xl 1200 px
     margin: 0;
     padding: 0;
 }
-
+section{
+    height: 100vh;
+}
 .zukan-header{
     background-color: rgb(2, 2, 2);
     a{
@@ -71,19 +73,19 @@ xl 1200 px
     .sectOne-title{
         z-index: 10;
         .title-left{
-            position: absolute;
+            position: fixed;
             left: 0;
             h1{
                 padding: 30px;
+               
                 font-size: 50px;
                 font-family: 'Acme', sans-serif;
                 color: white;
             }
         }
         .title-right{
-           position: absolute;
+           position: fixed;
            right: 0;
-           margin-right: 30px;
             ul{
                 list-style: none;
                 padding: 30px;
@@ -105,24 +107,21 @@ xl 1200 px
 
                 }
             }
+            // 漢堡選單
+            .menu-list{
+                a{
+                color: white;
+                font-size: 30px;
+                }
+                a:hover{
+                    cursor: pointer;
+                }
+            }
    
         }
 
     }
-    // 漢堡選單
-    .menu-list{
-        z-index: 10;
-        top: 30px;
-        right: 30px;
-        position: absolute;
-        a{
-            color: white;
-            font-size: 30px;
-        }
-        a:hover{
-            cursor: pointer;
-        }
-    }
+
     .zukan-logo{
         display: none;
     }
